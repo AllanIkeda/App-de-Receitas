@@ -1,0 +1,8 @@
+/* Estilos personalizados do Tailwind */
+.slick-prev:before, .slick-next:before {
+  color: black;
+}
+
+.slick-dots li button:before {
+  color: black;
+}

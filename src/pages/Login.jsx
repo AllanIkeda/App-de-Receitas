@@ -29,23 +29,22 @@ function Login() {
   };
 
   return (
-    <div className="bg-violet-900 h-screen flex flex-col-reverse">
+    <div className="container-login">
       <img
-        className="absolute mt-2 place-self-center inset-y-14 w-64"
+        className="img1-login"
         src={ fullRecipesLogo }
         alt="tomate"
       />
       <img
-        className="absolute mt-2 inset-y-1/4 w-full"
+        className="img2-login"
         src={ tomatoes }
         alt="tomate"
       />
-      <form className="bg-white h-1/2 w-screen flex flex-col justify-center items-center">
-        <h1 className="text-violet-900 text-3xl">LOGIN</h1>
+      <form className="form-login">
+        <h1 className="title-form-login">LOGIN</h1>
         <label htmlFor="email">
           <input
-            className="p-2 px-9 mt-8 mb-3 placeholder-violet-900
-            border-violet-900 border rounded"
+            className="input-login"
             type="email"
             name="email"
             id="email"
@@ -57,8 +56,7 @@ function Login() {
         </label>
         <label>
           <input
-            className="p-2 px-9 mb-3 placeholder-violet-900
-            border-violet-900 border rounded"
+            className="input-login"
             type="password"
             name="password"
             id="password"
@@ -69,8 +67,7 @@ function Login() {
           />
         </label>
         <button
-          className="bg-yellow-400 disabled:opacity-50 text-white p-2
-          px-28 font-bold cursor-pointer rounded"
+          className="button-login"
           type="submit"
           data-testid="login-submit-btn"
           disabled={ validated }

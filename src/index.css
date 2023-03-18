@@ -2,16 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-  sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@media (max-width: 767px) {
+  /* LOGIN PAGE */
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-  monospace;
+  .container-login {
+    @apply bg-orange-700 h-screen flex flex-col-reverse;
+  }
+
+  .img1-login {
+    @apply absolute mt-2 place-self-center inset-y-14 w-64;
+  }
+
+  .img2-login {
+    @apply absolute mt-16 inset-y-1/4 w-3/5;
+  }
+
+  .form-login {
+    @apply bg-white h-1/2 w-screen flex flex-col justify-center items-center;
+  }
+
+  .title-form-login {
+    @apply text-violet-900 mt-8 text-3xl;
+  }
+
+  .input-login {
+    @apply p-2 px-9 mt-8 mb-3 placeholder-violet-900
+    border-violet-900 border rounded;
+  }
+
+  .button-login {
+    @apply bg-yellow-400 disabled:opacity-50 text-white p-2
+    px-28 font-bold cursor-pointer rounded;
+  }
 }

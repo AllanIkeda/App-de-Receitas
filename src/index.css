@@ -3,8 +3,82 @@
 @tailwind utilities;
 
 @media (max-width: 767px) {
-  /* LOGIN PAGE */
+  /* HEADER COMPONENT */
+  .header-container {
+    @apply bg-yellow-400 w-screen py-2 px-6;
+  }
 
+  .header-title {
+    @apply text-3xl font-bold text-violet-900 my-4;
+  }
+
+  .search-bar-form {
+    @apply bg-violet-900 h-36 w-11/12 rounded-3xl
+    flex flex-col justify-between mb-2;
+  }
+
+  .search-bar-input {
+    @apply w-full py-2 px-6 border rounded-xl;
+  }
+
+  .search-bar-radio-containe {
+    @apply w-4/5 flex text-white place-self-center
+justify-between items-center;
+  }
+
+  .search-bar-button {
+    @apply w-4/5 place-self-center text-white font-bold
+    text-xl h-10 mb-3 bg-yellow-400 rounded-lg;
+  }
+
+  /* BUTTON CATEGORIES */
+  .button-categories {
+    @apply border-orange-500 border bg-orange-600 py-2 px-1 text-white
+    w-full h-16 font-bold flex items-center justify-center;
+  }
+
+  .button-reset {
+    @apply w-full bg-violet-900 text-white h-10 font-bold;
+  }
+
+  /* BUTTON RECIPE DETAILS */
+  .button-container-details {
+    @apply w-full active:bg-black flex items-center justify-center;
+  }
+
+  .button-main-details {
+    @apply fixed bottom-2 rounded-lg h-10 w-full bg-yellow-400 text-white
+    font-semibold text-xl;
+  }
+
+  /* BUTTON FAVORITE/SHARE */
+  .button-favorite-share {
+    @apply absolute inset-x-3/4 w-24 h-16 z-40 flex justify-around items-center;
+  }
+
+  /* BUTTON CARD */
+  .card-container {
+    @apply w-64 h-72 flex flex-col-reverse my-2
+    border-violet-400 border-2 rounded-lg
+    justify-between items-center overflow-hidden;
+  }
+
+  .card-container-title {
+    @apply flex border-t-violet-400 border-2
+    justify-center items-center h-full w-full;
+  }
+
+  .card-title {
+    @apply text-xl font-semibold text-violet-900;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    @apply h-20 w-screen fixed bottom-0
+    bg-violet-900 flex items-center justify-between px-8;
+  }
+
+  /* LOGIN PAGE */
   .container-login {
     @apply bg-orange-700 h-screen flex flex-col-reverse;
   }
@@ -33,5 +107,113 @@
   .button-login {
     @apply bg-yellow-400 disabled:opacity-50 text-white p-2
     px-28 font-bold cursor-pointer rounded;
+  }
+
+  /* RECIPE PAGE */
+  .recipe-main {
+    @apply flex flex-col justify-center items-center mb-24;
+  }
+
+  /* PROFILE PAGE */
+  .container-profile {
+    @apply flex h-full flex-col mt-10 items-center justify-evenly;
+  }
+
+  .profile-email {
+    @apply text-2xl font-bold;
+  }
+
+  .container-buttons {
+    @apply flex flex-col justify-evenly h-full;
+  }
+
+  .profile-buttons {
+    @apply text-2xl items-center mt-20 h-full flex;
+  }
+
+  /* DONERECIPE PAGE */
+  .done-recipe-main {
+    @apply flex flex-col items-center;
+  }
+
+  .done-recipe-container {
+    @apply flex w-11/12 flex-col
+  items-center justify-center;
+  }
+
+  .done-recipe-container-card {
+    @apply flex w-full overflow-hidden rounded-xl
+  place-self-center justify-between border-2 my-2 h-40;
+  }
+
+  .done-recipe-container-card2 {
+    @apply flex flex-col w-full justify-evenly items-center;
+  }
+
+  .done-recipe-tags {
+    @apply bg-gray-300 mx-1 w-16
+  text-center text-gray-700 rounded-3xl;
+  }
+
+  /* RECIPE IN PROGRESSS PAGE */
+  .inprogress-main {
+    @apply flex flex-col items-center;
+  }
+
+  .inprogress-title-container {
+    @apply w-screen h-64 overflow-hidden;
+  }
+
+  .inprogress-title {
+    @apply text-white font-bold text-4xl
+    flex items-center absolute z-40 h-10 w-48 inset-x-28 inset-y-24 justify-center;
+  }
+
+  .inprogress-img {
+    @apply w-screen relative brightness-75;
+  }
+
+  .inprogress-title-ingredient {
+    @apply ml-4 mt-4 text-2xl font-semibold;
+  }
+
+  .inprogress-ingredient-list {
+    @apply text-xl list-none list-inside
+    w-full p-4 my-3 border-2 rounded-lg;
+  }
+
+  .inprogress-border {
+    @apply text-xl w-full p-6 my-3 border-2 rounded-lg;
+  }
+
+  /* RECIPE DETAILS PAGE */
+  .recipe-details-main {
+    @apply flex flex-col items-center;
+  }
+
+  .recipe-details-container {
+    @apply w-screen h-64 overflow-hidden;
+  }
+
+  .recipe-title {
+    @apply text-white font-bold text-4xl flex items-center
+    absolute z-40 h-10 w-48 inset-x-28 inset-y-24 justify-center;
+  }
+
+  .recipe-img {
+    @apply w-screen relative brightness-75;
+  }
+
+  .recipe-title-ingredient {
+    @apply ml-4 mt-4 text-2xl font-semibold;
+  }
+
+  .recipe-ingredient-list {
+    @apply text-xl list-disc list-inside
+    w-full p-4 my-3 border-2 rounded-lg;
+  }
+
+  .recipe-border {
+    @apply text-xl w-full p-6 my-3 border-2 rounded-lg;
   }
 }

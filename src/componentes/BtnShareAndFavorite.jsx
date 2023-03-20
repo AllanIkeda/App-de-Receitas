@@ -80,8 +80,7 @@ function BtnShareAndFavorite({ recipe, recipeType, id, favoriteId, shareId }) {
 
   return (
     <div
-      className="absolute inset-x-3/4
-      w-24 h-16 z-40 flex justify-around items-center"
+      className="button-favorite-share"
     >
       <button onClick={ shareRecipe }>
         <img

@@ -15,7 +15,7 @@ function Header() {
 
   return (
     <header className="header">
-      <div className="header-top bg-yellow-400 w-screen py-2 px-6">
+      <div className="header-top header-container">
         <div className="recipes-logo">
           <img className="w-14" src={ recipesLogo } alt="recipes icon" />
           <img className="ml-6 w-32" src={ recipesTextLogo } alt="recipes text icon" />

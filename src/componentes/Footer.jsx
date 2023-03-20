@@ -16,8 +16,7 @@ function Footer() {
   return (
     <div
       data-testid="footer"
-      className="footer h-20 w-screen fixed bottom-0
-      bg-violet-900 flex items-center justify-between px-8"
+      className="footer-container footer"
     >
       <button type="button" className="button" onClick={ () => clickDrinks() }>
         <img

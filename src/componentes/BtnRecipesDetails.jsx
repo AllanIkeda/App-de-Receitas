@@ -136,10 +136,9 @@ function BtnRecipesDetails({ idRecipe, type, ingredients, AllChecked, recipeFull
   }, [getLocalStorage]);
 
   return (
-    <div className="w-full active:bg-black flex items-center justify-center">
+    <div className="button-container-details">
       <button
-        className="fixed bottom-2 rounded-lg h-10 w-full bg-yellow-400 text-white
-        font-semibold text-xl"
+        className="button-main-details "
         style={ { position: 'fixed', bottom: 0, left: 0 } }
         data-testid={ `${progress[2] === 'in-progress' ? 'finish' : 'start'}-recipe-btn` }
         onClick={ AllChecked

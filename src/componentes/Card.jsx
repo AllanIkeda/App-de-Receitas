@@ -4,17 +4,14 @@ import PropTypes from 'prop-types';
 function Card({ param, idx }) {
   return (
     <div
-      className="w-64 h-72 flex flex-col-reverse my-2
-      border-violet-400 border-2 rounded-lg
-      justify-between items-center overflow-hidden"
+      className="card-container"
       data-testid={ `${idx}-recipe-card` }
     >
       <div
-        className="flex border-t-violet-400 border 2
-        justify-center items-center h-full w-full"
+        className="card-container-title"
       >
         <h2
-          className="text-xl font-semibold text-violet-900"
+          className="card-title "
           data-testid={ `${idx}-card-name` }
         >
           {param.strMeal ? param.strMeal : param.strDrink}

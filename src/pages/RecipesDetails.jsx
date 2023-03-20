@@ -58,17 +58,16 @@ function RecipesDetails() {
           .map((
             { idMeal, strMealThumb, strMeal, strCategory, strInstructions, strYoutube },
           ) => (
-            <main className="flex flex-col items-center" key={ idMeal }>
-              <div className="w-screen h-64 overflow-hidden">
+            <main className="recipe-details-main" key={ idMeal }>
+              <div className="recipe-details-container">
                 <h2
-                  className="text-white font-bold text-4xl flex items-center decoration
-                  absolute z-40 h-10 w-48 inset-x-28 inset-y-24 justify-center"
+                  className="recipe-title"
                   data-testid="recipe-title"
                 >
                   {strMeal}
                 </h2>
                 <img
-                  className="w-screen relative brightness-75"
+                  className="recipe-img"
                   data-testid="recipe-photo"
                   src={ strMealThumb }
                   alt={ strMeal }
@@ -76,10 +75,9 @@ function RecipesDetails() {
                 <h3 data-testid="recipe-category">{strCategory}</h3>
               </div>
               <div className="my-8 w-11/12">
-                <h2 className="ml-4 text-2xl font-semibold">Ingredients</h2>
+                <h2 className="recipe-title-ingredient">Ingredients</h2>
                 <ul
-                  className="text-xl list-disc list-inside
-                  w-full p-4 my-3 border-2 rounded-lg"
+                  className="recipe-ingredient-list"
                 >
                   {ingredients.map((ingredient, idx) => (
                     <li
@@ -95,16 +93,16 @@ function RecipesDetails() {
                 </ul>
               </div>
               <div className="w-11/12 mb-8">
-                <h2 className="ml-4 text-2xl font-semibold">Instructions</h2>
+                <h2 className="recipe-title-ingredient">Instructions</h2>
                 <p
-                  className="text-xl w-full p-6 my-3 border-2 rounded-lg"
+                  className="recipe-border"
                   data-testid="instructions"
                 >
                   {strInstructions}
                 </p>
               </div>
               <div className="w-11/12 mb-8">
-                <h2 className="ml-4 mb-2 text-2xl font-semibold">Video</h2>
+                <h2 className="recipe-title-ingredient">Video</h2>
                 <iframe
                   className="w-full h-72"
                   data-testid="video"
@@ -136,17 +134,16 @@ function RecipesDetails() {
               strAlcoholic,
             },
           ) => (
-            <main className="flex flex-col items-center" key={ idDrink }>
-              <div className="w-screen h-64 overflow-hidden">
+            <main className="recipe-details-main" key={ idDrink }>
+              <div className="recipe-details-container">
                 <h2
-                  className="text-white font-bold text-4xl flex items-center decoration
-                  absolute z-40 h-10 w-48 inset-x-28 inset-y-24 justify-center"
+                  className="recipe-title"
                   data-testid="recipe-title"
                 >
                   {strDrink}
                 </h2>
                 <img
-                  className="w-screen relative brightness-75"
+                  className="recipe-img"
                   data-testid="recipe-photo"
                   src={ strDrinkThumb }
                   alt={ strDrink }
@@ -158,10 +155,9 @@ function RecipesDetails() {
                 </h3>
               </div>
               <div className="my-8 w-11/12">
-                <h2 className="ml-4 text-2xl font-semibold">Ingredients</h2>
+                <h2 className="recipe-title-ingredient">Ingredients</h2>
                 <ul
-                  className="text-xl list-disc list-inside
-                  w-full p-4 my-3 border-2 rounded-lg"
+                  className="recipe-ingredient-list"
                 >
                   {ingredients.map((ingredient, idx) => (
                     <li
@@ -176,9 +172,9 @@ function RecipesDetails() {
                 </ul>
               </div>
               <div className="w-11/12 mb-8">
-                <h2 className="ml-4 text-2xl font-semibold">Instructions</h2>
+                <h2 className="recipe-title-ingredient">Instructions</h2>
                 <p
-                  className="text-xl w-full p-6 my-3 border-2 rounded-lg"
+                  className="recipe-border "
                   data-testid="instructions"
                 >
                   {strInstructions}

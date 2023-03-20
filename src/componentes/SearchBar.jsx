@@ -106,12 +106,11 @@ function SearchBar() {
 
   return (
     <form
-      className="bg-violet-900 h-36 w-11/12 rounded-3xl
-      flex flex-col justify-between mb-2"
+      className="search-bar-form "
     >
       <label htmlFor="search">
         <input
-          className="w-full py-2 px-6 border rounded-xl"
+          className="search-bar-input"
           id="search"
           data-testid="search-input"
           type="text"
@@ -121,8 +120,7 @@ function SearchBar() {
         />
       </label>
       <section
-        className="w-4/5 flex text-white place-self-center
-        justify-between items-center"
+        className="search-bar-radio-containe"
       >
         <label>
           <input
@@ -156,8 +154,7 @@ function SearchBar() {
         </label>
       </section>
       <button
-        className="w-4/5 place-self-center text-white font-bold
-        text-xl h-10 mb-3 bg-yellow-400 rounded-lg"
+        className="search-bar-button"
         type="button"
         data-testid="exec-search-btn"
         onClick={ () => handleClick() }

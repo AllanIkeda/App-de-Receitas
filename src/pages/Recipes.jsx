@@ -42,7 +42,7 @@ function Recipes() {
       <Header />
       <BtnCategories />
       <button
-        className="w-full bg-violet-900 text-white h-10 font-bold"
+        className="button-reset"
         type="button"
         data-testid="All-category-filter"
         onClick={ handleResetFilters }
@@ -50,7 +50,7 @@ function Recipes() {
         ALL
       </button>
 
-      <div className="flex flex-col justify-center items-center mb-24">
+      <div className="recipe-main">
         {pathname === '/meals' ? (
           recipe
             .map((meal, idx) => (

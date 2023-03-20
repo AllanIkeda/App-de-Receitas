@@ -29,7 +29,7 @@ function HeaderTitle() {
 
   return (
     <h1
-      className="text-3xl font-bold text-violet-900 my-4"
+      className="header-title"
       data-testid="page-title"
     >
       { title }

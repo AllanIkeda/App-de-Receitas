@@ -47,8 +47,7 @@ function BtnCategories() {
             .map(
               (categorie) => (
                 <button
-                  className="border-yellow-500 border bg-yellow-400 py-2 px-1 text-white
-                  w-full h-16 font-bold flex items-center justify-center"
+                  className="button-categories"
                   data-testid={ `${categorie.strCategory}-category-filter` }
                   key={ categorie.strCategory }
                   type="button"
@@ -63,8 +62,7 @@ function BtnCategories() {
             .map(
               (categorie) => (
                 <button
-                  className="border-yellow-500 border bg-yellow-400 py-2 px-1 text-white
-                  h-16 font-bold flex w-full items-center justify-center"
+                  className="button-categories"
                   data-testid={ `${categorie.strCategory}-category-filter` }
                   key={ categorie.strCategory }
                   type="button"
